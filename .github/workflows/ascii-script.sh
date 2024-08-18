@@ -1,6 +1,6 @@
 #/bin/sh
 sudo apt-get install cowsay -y
-cowsay -f dragon "Run for cover, I am a DRAGON... RaWR :3" >> dragon.txt
+cowsay -f dragon "Run for cover, I am a DRAGON... RaWR :3 Type shit" >> dragon.txt
 grep -i 'dragon' dragon.txt
 cat dragon.txt
 ls -ltra
