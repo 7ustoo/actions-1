@@ -6,7 +6,7 @@ jobs:
     first_job:
         runs-on: ubuntu-latest
         steps:
-        - name: Checkout
+        - name: Checkout Repo
           uses: actions/checkout@v4.1.7
         
         - name: Welcome message
@@ -16,5 +16,4 @@ jobs:
           run: ls
 
         - name: Read file
-          run: cat READ.md
-         
+          run: cat README.md
