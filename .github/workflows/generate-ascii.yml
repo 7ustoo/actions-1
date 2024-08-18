@@ -10,10 +10,9 @@ jobs:
     - name: Checkout Repo
       uses: actions/checkout@v4
 
-    - name: List All Files
-      run: find . -type f
+    - name: Ensure Shell Script is Executable
+      run: chmod +x ./ascii-script.sh
 
-    - name: Executing Shell Script
-      run: |
-        chmod +x ./ascii-script.sh
-        ./ascii-script.sh
+    - name: Install Dependencies and Execute Shell Script
+      run: ./ascii-script.sh
+      shell: bash
