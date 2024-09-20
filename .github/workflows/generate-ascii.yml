@@ -6,6 +6,8 @@ on:
 jobs:
   build_job_1:
     runs-on: ubuntu-latest
+    environment: 
+      name: Testing
     steps:
     - name: Install Cowsay Program
       run: sudo apt-get install cowsay -y
